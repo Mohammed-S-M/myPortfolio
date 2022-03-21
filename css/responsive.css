@@ -1,0 +1,291 @@
+/************************************* responsive.css ***************************************/
+/* Responsive design for devices under 300px like Galaxy Fold */
+@media screen and (max-width: 300px) {
+    .heading {
+        font-size: 1.5em;
+    }
+
+    .menu {
+        top: 10em;
+    }
+
+    .btn {
+        font-size: 0.7em;
+    }
+
+    @keyframes main-menu {
+        from {
+          font-size: 0em;
+        }
+        to {
+          font-size: 0.7em;
+        }
+      }
+
+    .box-b, .box-c {
+        background-image: radial-gradient(#30c67c 0.50px, #f5fff9 0.50px);
+    }
+
+    .header {
+        font-size: 1.2em;
+    }
+
+    .my-image {
+        width: 70%;
+    }
+
+    .summary {
+        font-size: 1em;
+    }
+
+    .paragraphs {
+        font-size: 0.9em;
+    }
+
+    .click {
+        font-size: 0.9em;
+    }
+
+}
+/****************************************************************************/
+
+/* Responsive design for devices and screens between (550px - 1024) */
+@media screen and (min-width: 550px) and (max-width: 1023px) {
+    .grid, .grid-a {
+        height: 120em;
+    }
+
+    .grid-s {
+        height: 75em;
+    }
+    
+    .box-a {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        width: 80%;
+        position: inherit;
+        flex-direction: row;
+        background: none;
+        box-shadow: none;
+    }
+
+    .link {
+        width: 15%;
+    }
+
+    @keyframes main-menu {
+        from {
+          width: 0;
+        }
+        to {
+          width: 15%;
+        }
+      }
+
+    .heading {
+        font-size: 3em;
+    }
+
+    .btn-menu {
+        width: 7%;
+    }
+
+    .header {
+        font-size: 2em;
+    }
+
+    .my-image {
+        width: 40%;
+    }
+
+    .summary {
+        font-size: 1.5em;
+    }
+
+    .icons {
+        width: 10%;
+    }
+
+    .about-title, .skills-title, .contact-title {
+        font-size: 5em;
+    }
+
+    .paragraphs {
+        font-size: 1.5em;
+    }
+
+    .click {
+        font-size: 2em;
+    }
+
+    .skills-i {
+        width: 20%;
+        margin: 2em 4em;
+    }
+
+    .contact-p {
+        font-size: 2em;
+    }
+
+    .contact-icon {
+        width: 80%;
+    }
+
+    .contact-i {
+        width: 30%;
+    }
+
+    .layout-1, .layout-2, .layout-3, .layout-4 {
+        height: 35em;
+    }
+
+    .layout-head {
+        font-size: 3em;
+    }
+
+    .description {
+        font-size: 1.6em;
+    }
+
+    .exit-html, .exit-css, .exit-js, .exit-git {
+        width: 7%;
+    }
+
+    .overlay {
+        height: 75em;
+    }
+}
+/****************************************************************************/
+
+/* Responsive design for big screens from 1024px and up */
+@media screen and (min-width: 1024px) {
+    .grid {
+        grid-template-rows: 1fr 1fr 5fr 1fr;
+        height: 60em;
+    }
+
+    .grid-a {
+        grid-template-rows: 1fr 6fr 1fr;
+        height: 57.5em;
+    }
+
+    .grid-s {
+        grid-template-rows: 12.5% 75% 12.5%;
+        height: 57.5em;
+    }
+
+    .overlay {
+        height: 57.5em;
+    }
+
+    .hide {
+        display: contents;
+    }
+
+    .btn-menu {
+        display: none;
+    }
+
+    .box-a {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .box-d {
+        justify-content: center;
+    }
+
+    .home-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading {
+        font-size: 3em;
+        margin-right: 1em;
+    }
+
+    .link {
+        width: 5%;
+        margin: 0em 0.3em;
+        font-size: 1em;
+        background: none;
+        border: none;
+        box-shadow: none;
+        animation: none;
+        transition: all 0.1s linear;
+    }
+
+    .link:hover {
+        background-color: #ffffff;
+        border: solid 0.1em #000000;
+        box-shadow: 0.125em 0.125em 0.313em #000000;
+        cursor: pointer;
+    }
+
+    .btn {
+        cursor: pointer;
+    }
+
+    .icons {
+        width: 3%;
+        margin: 0 3em;
+    }
+
+    .header {
+        width: 50%;
+        margin-top: 2em;
+    }
+
+    .my-image {
+        width: 15%;
+        margin: 0 5em;
+    }
+
+    .summary {
+        width: 40%;
+    }
+
+    .about-para {
+        width: 50%;
+    }
+
+    .paragraphs {
+        font-size: 1.2em;
+    }
+
+    .click {
+        font-size: 1.5em;
+    }
+
+    .skills-i {
+        width: 10%;
+        cursor: pointer;
+    }
+
+    .layout-1, .layout-2, .layout-3, .layout-4 {
+        width: 50%;
+        height: 30em;
+    }
+
+    .exit-html, .exit-css, .exit-js, .exit-git {
+        width: 5%;
+        cursor: pointer;
+      }
+
+      .contact-p {
+          width: 42%;
+          font-size: 1.5em;
+      }
+
+      .contact-icon {
+          width: 50%;
+      }
+}
+/****************************************************************************/
+/*******************************************END OF RESPONSIVE DESIGN*****************************************/

@@ -1,4 +1,5 @@
-/* grid styling */
+/* ----------------------------------------- Style.css -------------------------------------- */
+/* Grid styling to style the sizes of the page blocks and its positions */
 .grid {
   display: grid;
   grid-template-rows: 1fr 1.5fr 4.5fr 1fr;
@@ -6,7 +7,22 @@
   height: 100em;
 }
 
-/* navigation bar styling */
+.grid-a {
+  display: grid;
+  grid-template-rows: 1fr 6fr 1fr;
+  width: 100%;
+  height: 100em;
+}
+
+.grid-s {
+  width: 100%;
+  height: 64em;
+  display: grid;
+  grid-template-rows: 19% 62% 19%;
+}
+/*************************************************************************************/
+
+/* Blocks styling. Nav, Main, Footer that will be used on the multiple pages */
 .box-a {
   background: linear-gradient(to left, #82f4b1, #30c67c);
   display: flex;
@@ -15,6 +31,37 @@
   align-items: center;
 }
 
+.box-b {
+  background-color: #f5fff9;
+  background-image: radial-gradient(#30c67c 0.65px, #f5fff9 0.65px);
+  background-size: 13px 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-c {
+  background-color: #f5fff9;
+  background-image: radial-gradient(#30c67c 0.65px, #f5fff9 0.65px);
+  background-size: 13px 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.box-d {
+  background: linear-gradient(to left, #099773, #43b692);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0em 0em 1em 0.313em #247a4d;
+}
+/*************************************************************************************/
+
+/* Navigation bar styling */
 .heading {
   font-family: "Unica One", cursive;
   font-size: 2em;
@@ -22,16 +69,6 @@
   border: solid 0.063em #000000;
   box-shadow: 0.125em 0.125em 0.313em #000000;
   padding: 0.188em 0.188em;
-}
-
-.btn-menu {
-  width: 10%;
-  margin-top: 0.188em;
-}
-
-.active {
-  transition: 0.5s;
-  transform: rotate(90deg);
 }
 
 .menu {
@@ -53,7 +90,7 @@
   box-shadow: 0 0 1em 0.094em #247a4d;
 }
 
-.btn {
+.link {
   width: 40%;
   margin: 1em 0;
   padding: 0.625em 0;
@@ -62,27 +99,45 @@
   border: solid 0.2em #000000;
   box-shadow: 0.125em 0.125em 0.313em #000000;
 
+  animation-name: main-menu;
+  animation-duration: 0.1s;
+  animation-timing-function: ease;
+}
+
+@keyframes main-menu {
+  from {
+    font-size: 0em;
+  }
+  to {
+    font-size: 0.85em;
+  }
+}
+
+.btn {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  color: #000000;
   font-family: "Unica One", cursive;
   font-size: 0.85em;
   font-weight: bold;
   letter-spacing: 0.125em;
 }
 
-.btn a {
-  text-decoration: none;
+.btn-menu {
+  width: 10%;
+  margin-top: 0.188em;
 }
+/*************************************************************************************/
 
-/* header section styling */
-.box-b {
-  background-color: #f5fff9;
-  background-image: radial-gradient(#30c67c 0.65px, #f5fff9 0.65px);
-  background-size: 13px 13px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* footer section styling */
+.icons {
+  width: 15%;
 }
+/*************************************************************************************/
 
+/* Home page header section styling */
 .header {
   width: 80%;
   font-family: "Teko", sans-serif;
@@ -91,18 +146,9 @@
   line-height: 1.5;
   letter-spacing: 0.094em;
 }
+/*************************************************************************************/
 
-/* main section styling */
-.box-c {
-  background-color: #f5fff9;
-  background-image: radial-gradient(#30c67c 0.65px, #f5fff9 0.65px);
-  background-size: 13px 13px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
+/* Home page main section styling */
 .my-image {
   width: 55%;
   box-shadow: 0.25em -0.25em 0em #30c67c, -0.25em 0.25em 0em #247a4d;
@@ -117,20 +163,142 @@
   letter-spacing: 0.063em;
   text-shadow: 0.25em 0.25em 0.313em #30c67c;
 }
+/*************************************************************************************/
 
-/* footer section styling */
-.box-d {
-  background: linear-gradient(to left, #247a4d, #0b2c24);
+/* About page main section styling */
+.about-title, .skills-title, .contact-title {
+  font-family: "Teko", sans-serif;
+  font-size: 3em;
+  line-height: 1.3;
+  letter-spacing: 0.063em;
+  text-shadow: 0.25em 0.25em 0.313em #30c67c;
+}
+
+.about-para {
+  width: 80%;
+}
+
+.paragraphs {
+  font-family: "Teko", sans-serif;
+  font-size: 1.1em;
+  text-align: justify;
+  line-height: 1.3;
+  letter-spacing: 0.063em;
+}
+/*************************************************************************************/
+
+/* Skills page main section styling */
+.click {
+  font-family: "Teko", sans-serif;
+  font-size: 1.3em;
+  text-align: justify;
+  line-height: 1.3;
+  letter-spacing: 0.063em;
+}
+
+.skills-icons {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  box-shadow: 0em 0em 1em 0.313em #247a4d;
 }
 
-.icons {
-  width: 15%;
+.skills-i{
+  width: 30%;
+  margin: 1em 1em;
+
+  background-color: #0b2c24;
+  box-shadow: 1em 1em 1em #247a4d;
 }
+
+.layout-1, .layout-2, .layout-3, .layout-4 {
+  background-color: #ffffff;
+  width: 90%;
+  height: 26em;
+
+  position: absolute;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; 
+  
+  border-radius: 1em;
+  box-shadow: 0em 0em 2em 0.33em #000000;
+}
+
+.exit {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+
+.exit-html, .exit-css, .exit-js, .exit-git {
+  width: 12%;
+}
+
+.lay-h {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.layout-head {
+  font-family: "Teko", sans-serif;
+  font-size: 2em;
+  text-align: justify;
+  line-height: 1.3;
+  letter-spacing: 0.063em;
+  text-shadow: 0.25em 0.25em 0.313em #30c67c;
+}
+
+.description {
+  width: 80%;
+  height: 100%;
+  margin: 10%;
+  font-family: "Teko", sans-serif;
+  font-size: 1.1em;
+  /* text-align: justify; */
+  line-height: 1.5;
+  letter-spacing: 0.063em;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/*************************************************************************************/
+
+/* Contact page main section styling */
+.contact-p {
+  width: 80%;
+  font-family: "Teko", sans-serif;
+  font-size: 1.3em;
+  text-align: justify;
+  line-height: 1.3;
+  letter-spacing: 0.063em;
+}
+
+.contact-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icon a {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-i {
+  width: 40%;
+}
+/*************************************************************************************/
 
 /* the DOM styling */
 .overlay {
@@ -138,10 +306,20 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 64em;
   z-index: 5;
+}
+
+.hide {
+  display: none;
 }
 
 .hidden {
   display: none;
 }
+
+.active {
+  transition: 0.5s;
+  transform: rotate(90deg);
+}
+/************************************** THE END **************************************/

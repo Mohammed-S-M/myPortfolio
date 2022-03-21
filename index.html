@@ -8,6 +8,8 @@
     <!-- Css links -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css">
+
     <!-- Google fonts links -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,8 +20,9 @@
   </head>
 
   <body>
-    <!-- Grid system -->
+    <!-- Grid -->
     <section class="grid">
+
       <!-- box-a navigation bar -->
       <nav class="box-a">
         <h1 class="heading">Mohammed S Mahmood</h1>
@@ -28,12 +31,13 @@
           alt="menu button"
           class="btn-menu active"
         />
-        <div class="menu hidden">
-          <button class="btn"><a href="">Home</a></button>
-          <button class="btn"><a href="">About</a></button>
-          <button class="btn"><a href="">skills</a></button>
-          <button class="btn"><a href="">Contact</a></button>
+        <div class="menu hide">
+          <a href="./index.html" class="link"><button class="btn">Home</button></a>
+          <a href="./about/index.html" class="link"><button class="btn">About</button></a>
+          <a href="./skills/index.html" class="link"><button class="btn">skills</button></a>
+          <a href="./contact/index.html" class="link"><button class="btn">Contact</button></a>
         </div>
+        
       </nav>
 
       <!-- box-b header section -->
@@ -44,8 +48,9 @@
           beautiful website? Then you got what you looking for &#128521;
         </article>
       </header>
+
       <!-- box-c main body section -->
-      <main class="box-c">
+      <main class="box-c home-main">
         <img src="./img/my_photo_1.jpg" alt="mohammed image" class="my-image" />
         <article class="summary">
           My name is Mohammed S Mahmood, 33 years old passionate front-end web
@@ -58,6 +63,7 @@
           go to the contact section to reachout through email or social media.
         </article>
       </main>
+
       <!-- box-d footer section -->
       <footer class="box-d">
         <img src="./img/html5_icon.png" alt="html 5 icon" class="icons" />
@@ -71,7 +77,9 @@
       </footer>
     </section>
 
-    <section class="overlay hidden"></section>
+    <!-- Overlay I'm going to use it to exit the menu and the skills 
+      icons when the user click outside of them -->
+    <section class="overlay hide"></section>
     <!-- JS link -->
     <script src="./js/script.js"></script>
   </body>
